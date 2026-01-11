@@ -6,8 +6,13 @@ export default function AuthScreen() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
       <View>
-        {" "}
         <Text>Create Account</Text>
+        {/* <TextInput
+          label="Email"
+          autoCapitalize="none"
+          keyboardType="email-address"
+          placeholder="example@email.com"
+        /> */}
       </View>
     </KeyboardAvoidingView>
   );
