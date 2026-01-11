@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 
 export default function Index() {
   const [pokemons, setPokemons] = useState([]);
@@ -15,20 +15,18 @@ export default function Index() {
         "https://pokeapi.co/api/v2/pokemon?limit=20"
       );
       const data = await response.json();
-      setPokemons(data);
+      setPokemons(data.results);
     } catch (error) {
       console.log(error);
     }
   }
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <ScrollView>
+      {pokemons.map((pokemon) => (
+        <View key={pokemon.name}>
+          <Text>{pokemon.name}</Text>
+        </View>
+      ))}
+    </ScrollView>
   );
 }
