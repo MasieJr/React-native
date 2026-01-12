@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# React Native Pokedex 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This repository contains the code built while following the **[React Native for Dummies 2026 – Full Beginner Crash Course](https://www.youtube.com/watch?v=BUXnASp_WyQ)** tutorial by **Code with Beto**.
 
-## Get started
+I created this project to familiarize myself with the latest React Native ecosystem and brush up on mobile development skills using Expo.
 
-1. Install dependencies
+## 📺 Tutorial Source
 
-   ```bash
-   npm install
-   ```
+- **Video:** [React Native for Dummies 2026 – Full Beginner Crash Course](https://www.youtube.com/watch?v=BUXnASp_WyQ)
+- **Channel:** [Code with Beto](https://www.youtube.com/@CodewithBeto)
 
-2. Start the app
+## 🚀 Features
 
-   ```bash
-   npx expo start
-   ```
+The app demonstrates core React Native concepts:
 
-In the output, you'll find options to open the app in a
+- **API Integration:** Fetches real Pokemon data from [PokeAPI](https://pokeapi.co/).
+- **Dynamic UI:** Displays a list of Pokemon with images and background colors dynamically rendered based on the Pokemon's element type.
+- **Navigation:** Uses **Expo Router** to navigate between the home list and a detailed view.
+- **State Management:** Uses React hooks (`useState`, `useEffect`) for data fetching.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠 Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Framework:** React Native (via [Expo](https://expo.dev/))
+- **Language:** TypeScript / JavaScript
+- **Routing:** Expo Router
+- **Data Source:** PokeAPI
 
-## Get a fresh project
+## 🏃‍♂️ Getting Started
 
-When you're ready, run:
+To run this project locally, you will need **Node.js** installed.
 
-```bash
-npm run reset-project
-```
+1.  **Clone the repository:**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    ```bash
+    git clone <your-repo-url>
+    cd <your-repo-folder>
+    ```
 
-## Learn more
+2.  **Install dependencies:**
 
-To learn more about developing your project with Expo, look at the following resources:
+    ```bash
+    npm install
+    ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3.  **Start the app:**
 
-## Join the community
+    ```bash
+    npx expo start
+    ```
 
-Join our community of developers creating universal apps.
+4.  **View the app:**
+    - Scan the QR code with the **Expo Go** app on your Android or iOS device.
+    - Press `w` in the terminal to open in the web browser.
+    - Press `i` to open in an iOS simulator (Mac only).
+    - Press `a` to open in an Android emulator.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+_Credit to [Code with Beto](https://www.youtube.com/@CodewithBeto) for the excellent educational content._
