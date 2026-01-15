@@ -10,8 +10,8 @@ interface Pokemon {
 
 interface PokemonType {
   type: {
-    name: String;
-    url: String;
+    name: string;
+    url: string;
   };
 }
 
@@ -78,7 +78,10 @@ export default function Index() {
           key={pokemon.name}
           // @ts-ignore
           style={{
-            backgroundColor: colorByType[pokemon.types[0].type.name] + 50,
+            backgroundColor:
+              colorByType[
+                pokemon.types[0].type.name as keyof typeof colorByType
+              ] + 50,
             padding: 20,
             borderRadius: 20,
           }}
