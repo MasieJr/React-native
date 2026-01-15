@@ -77,7 +77,11 @@ export default function Index() {
         <View
           key={pokemon.name}
           // @ts-ignore
-          style={{ backgroundColor: colorByType[pokemon.types[0].type.name] }}
+          style={{
+            backgroundColor: colorByType[pokemon.types[0].type.name] + 50,
+            padding: 20,
+            borderRadius: 20,
+          }}
         >
           <Text style={styles.name}>{pokemon.name}</Text>
           <Text style={styles.type}>{pokemon.types[0].type.name}</Text>
@@ -101,10 +105,12 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 28,
     fontWeight: "bold",
+    textAlign: "center",
   },
   type: {
     fontSize: 20,
     fontWeight: "bold",
     color: "grey",
+    textAlign: "center",
   },
 });
